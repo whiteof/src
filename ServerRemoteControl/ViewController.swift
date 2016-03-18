@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Foundation
+import NMSSH
 
 class ViewController: UIViewController {
 
@@ -20,6 +22,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func restartServer(sender: AnyObject) {
+        let session = NMSSHSession.connectToHost("66.175.212.71", port: 22, withUsername: "root")
+        
+        if(session.connected) {
+            session.authenticateByPassword("86v89y12g")
+            if(session.authorized) {
+                print("Success")
+            }
+        }
+        let filePath = NSBundle.mainBundle().pathForResource("Test", ofType: "txt")
+        session.channel.uploadFile(filePath, to: "/var/www/html/test.txt")
 
+    }
 }
 
