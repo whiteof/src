@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func restartServer(sender: AnyObject) {
+        /*
         let session = NMSSHSession.connectToHost("66.175.212.71", port: 22, withUsername: "root")
         
         if(session.connected) {
@@ -33,7 +34,25 @@ class ViewController: UIViewController {
         }
         let filePath = NSBundle.mainBundle().pathForResource("Test", ofType: "txt")
         session.channel.uploadFile(filePath, to: "/var/www/html/test.txt")
+        */
 
+        let session = NMSSHSession.connectToHost("140.251.7.146", port: 22, withUsername: "viy2003")
+        if(session.connected) {
+            session.authenticateByPassword("86V89y12g")
+            if(session.authorized) {
+                print("Success")
+            }
+        }
+        let sftp = NMSFTP.connectWithSession(session)
+        if(sftp.connected) {
+            print("SFTP Success")
+        }
+        
+        let filePath = NSBundle.mainBundle().pathForResource("Test", ofType: "txt")
+        sftp.writeFileAtPath(filePath, toFileAtPath: "/var/www/html/test/test123.txt")
+        
+        
+        
     }
 }
 
