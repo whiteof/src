@@ -15,7 +15,7 @@
 		A81E70811C9C845300CF72E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81E707F1C9C845300CF72E5 /* LaunchScreen.storyboard */; };
 		A81E708C1C9C845300CF72E5 /* ServerRemoteControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E708B1C9C845300CF72E5 /* ServerRemoteControlTests.swift */; };
 		A81E70971C9C845300CF72E5 /* ServerRemoteControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E70961C9C845300CF72E5 /* ServerRemoteControlUITests.swift */; };
-		A81E70A71C9C8ADF00CF72E5 /* Test.txt in Resources */ = {isa = PBXBuildFile; fileRef = A81E70A61C9C8ADF00CF72E5 /* Test.txt */; };
+		A81E70A71C9C8ADF00CF72E5 /* restart.txt in Resources */ = {isa = PBXBuildFile; fileRef = A81E70A61C9C8ADF00CF72E5 /* restart.txt */; };
 		B8993B1DDA967FC98B5EB320 /* Pods_ServerRemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B75233AD2921F735EBA146 /* Pods_ServerRemoteControl.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,7 +54,7 @@
 		A81E70921C9C845300CF72E5 /* ServerRemoteControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServerRemoteControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81E70961C9C845300CF72E5 /* ServerRemoteControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRemoteControlUITests.swift; sourceTree = "<group>"; };
 		A81E70981C9C845300CF72E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A81E70A61C9C8ADF00CF72E5 /* Test.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Test.txt; sourceTree = "<group>"; };
+		A81E70A61C9C8ADF00CF72E5 /* restart.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = restart.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +124,7 @@
 				A81E707F1C9C845300CF72E5 /* LaunchScreen.storyboard */,
 				A81E70821C9C845300CF72E5 /* Info.plist */,
 				A81E707A1C9C845300CF72E5 /* ServerRemoteControl.xcdatamodeld */,
-				A81E70A61C9C8ADF00CF72E5 /* Test.txt */,
+				A81E70A61C9C8ADF00CF72E5 /* restart.txt */,
 			);
 			path = ServerRemoteControl;
 			sourceTree = "<group>";
@@ -272,7 +272,7 @@
 			files = (
 				A81E70811C9C845300CF72E5 /* LaunchScreen.storyboard in Resources */,
 				A81E707E1C9C845300CF72E5 /* Assets.xcassets in Resources */,
-				A81E70A71C9C8ADF00CF72E5 /* Test.txt in Resources */,
+				A81E70A71C9C8ADF00CF72E5 /* restart.txt in Resources */,
 				A81E70791C9C845300CF72E5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
