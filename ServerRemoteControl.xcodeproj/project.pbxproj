@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A81E70741C9C845300CF72E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E70731C9C845300CF72E5 /* AppDelegate.swift */; };
-		A81E70761C9C845300CF72E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E70751C9C845300CF72E5 /* ViewController.swift */; };
+		A81E70761C9C845300CF72E5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E70751C9C845300CF72E5 /* DetailsViewController.swift */; };
 		A81E70791C9C845300CF72E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A81E70771C9C845300CF72E5 /* Main.storyboard */; };
 		A81E707C1C9C845300CF72E5 /* ServerRemoteControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A81E707A1C9C845300CF72E5 /* ServerRemoteControl.xcdatamodeld */; };
 		A81E707E1C9C845300CF72E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A81E707D1C9C845300CF72E5 /* Assets.xcassets */; };
@@ -16,6 +16,9 @@
 		A81E708C1C9C845300CF72E5 /* ServerRemoteControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E708B1C9C845300CF72E5 /* ServerRemoteControlTests.swift */; };
 		A81E70971C9C845300CF72E5 /* ServerRemoteControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81E70961C9C845300CF72E5 /* ServerRemoteControlUITests.swift */; };
 		A81E70A71C9C8ADF00CF72E5 /* restart.txt in Resources */ = {isa = PBXBuildFile; fileRef = A81E70A61C9C8ADF00CF72E5 /* restart.txt */; };
+		A8573DA31CA5A59500143EE4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8573DA21CA5A59500143EE4 /* LoginViewController.swift */; };
+		A8573DA51CA5ACAA00143EE4 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8573DA41CA5ACAA00143EE4 /* ListTableViewController.swift */; };
+		A8573DA71CA5BD5900143EE4 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8573DA61CA5BD5900143EE4 /* NavigationController.swift */; };
 		B8993B1DDA967FC98B5EB320 /* Pods_ServerRemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B75233AD2921F735EBA146 /* Pods_ServerRemoteControl.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +45,7 @@
 		8C0926F898D9552291965B70 /* Pods-ServerRemoteControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServerRemoteControl.release.xcconfig"; path = "Pods/Target Support Files/Pods-ServerRemoteControl/Pods-ServerRemoteControl.release.xcconfig"; sourceTree = "<group>"; };
 		A81E70701C9C845200CF72E5 /* ServerRemoteControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServerRemoteControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A81E70731C9C845300CF72E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A81E70751C9C845300CF72E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A81E70751C9C845300CF72E5 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		A81E70781C9C845300CF72E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A81E707B1C9C845300CF72E5 /* ServerRemoteControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ServerRemoteControl.xcdatamodel; sourceTree = "<group>"; };
 		A81E707D1C9C845300CF72E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +58,9 @@
 		A81E70961C9C845300CF72E5 /* ServerRemoteControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerRemoteControlUITests.swift; sourceTree = "<group>"; };
 		A81E70981C9C845300CF72E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A81E70A61C9C8ADF00CF72E5 /* restart.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = restart.txt; sourceTree = "<group>"; };
+		A8573DA21CA5A59500143EE4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A8573DA41CA5ACAA00143EE4 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		A8573DA61CA5BD5900143EE4 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +156,10 @@
 		A81E70A51C9C84B400CF72E5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A81E70751C9C845300CF72E5 /* ViewController.swift */,
+				A81E70751C9C845300CF72E5 /* DetailsViewController.swift */,
+				A8573DA21CA5A59500143EE4 /* LoginViewController.swift */,
+				A8573DA41CA5ACAA00143EE4 /* ListTableViewController.swift */,
+				A8573DA61CA5BD5900143EE4 /* NavigationController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -234,7 +243,7 @@
 				TargetAttributes = {
 					A81E706F1C9C845200CF72E5 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = E25EKD4HJ8;
+						DevelopmentTeam = XBKZT86CV4;
 					};
 					A81E70861C9C845300CF72E5 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -348,7 +357,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A81E707C1C9C845300CF72E5 /* ServerRemoteControl.xcdatamodeld in Sources */,
-				A81E70761C9C845300CF72E5 /* ViewController.swift in Sources */,
+				A8573DA71CA5BD5900143EE4 /* NavigationController.swift in Sources */,
+				A8573DA31CA5A59500143EE4 /* LoginViewController.swift in Sources */,
+				A81E70761C9C845300CF72E5 /* DetailsViewController.swift in Sources */,
+				A8573DA51CA5ACAA00143EE4 /* ListTableViewController.swift in Sources */,
 				A81E70741C9C845300CF72E5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
