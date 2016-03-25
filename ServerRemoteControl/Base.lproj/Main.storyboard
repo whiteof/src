@@ -61,19 +61,25 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R2J-mV-Oaq">
                                 <rect key="frame" x="20" y="114" width="560" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHe-9h-VzU">
-                                        <rect key="frame" x="10" y="10" width="540" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="loading..." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hHe-9h-VzU">
+                                        <rect key="frame" x="10" y="10" width="540" height="80"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="20" id="aBd-br-8fN"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="14"/>
                                         <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="aBd-br-8fN"/>
+                                            </mask>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="hHe-9h-VzU" firstAttribute="top" secondItem="R2J-mV-Oaq" secondAttribute="top" constant="10" id="3e7-WR-CmN"/>
+                                    <constraint firstAttribute="bottom" secondItem="hHe-9h-VzU" secondAttribute="bottom" constant="10" id="4KM-s0-8zP"/>
                                     <constraint firstAttribute="height" constant="100" id="6hc-Ns-NMF"/>
                                     <constraint firstAttribute="trailing" secondItem="hHe-9h-VzU" secondAttribute="trailing" constant="10" id="cWW-Po-0qU"/>
                                     <constraint firstItem="hHe-9h-VzU" firstAttribute="leading" secondItem="R2J-mV-Oaq" secondAttribute="leading" constant="10" id="kte-J2-yYV"/>
