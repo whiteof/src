@@ -28,13 +28,22 @@ class ListTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return 2
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        cell.textLabel?.text = "lamp-dev01.med.cornell.edu"
-        cell.detailTextLabel?.text = "IP: 140.251.7.146"
+        if(indexPath.row == 0) {
+            cell.textLabel?.text = "lamp-dev01.med.cornell.edu"
+            cell.detailTextLabel?.text = "IP: 140.251.7.146"
+        }
+        if(indexPath.row == 1) {
+            cell.textLabel?.text = "lamp-prd01.med.cornell.edu"
+            cell.detailTextLabel?.text = "IP: 140.251.6.41"
+            cell.imageView?.image = UIImage(named: "Icon - Server")
+        }
         return cell
     }
     

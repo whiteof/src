@@ -20,7 +20,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvr-zU-1cM">
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mvr-zU-1cM">
                                 <rect key="frame" x="90" y="190" width="420" height="220"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CWID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cor-CJ-xnB">
@@ -67,16 +67,26 @@
                                     <constraint firstItem="Cor-CJ-xnB" firstAttribute="top" secondItem="mvr-zU-1cM" secondAttribute="top" constant="40" id="xZd-NE-TZB"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Launch - Logo" translatesAutoresizingMaskIntoConstraints="NO" id="4Se-Jf-Y82">
+                                <rect key="frame" x="90" y="279" width="420" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="4Se-Jf-Y82" secondAttribute="height" multiplier="60:6" id="jHZ-yL-dRg"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.80392156862745101" green="0.33725490196078434" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mvr-zU-1cM" firstAttribute="centerY" secondItem="BTf-rv-db3" secondAttribute="centerY" id="VC0-Cs-sP7"/>
+                            <constraint firstItem="4Se-Jf-Y82" firstAttribute="leading" secondItem="BTf-rv-db3" secondAttribute="centerX" multiplier="0.3" id="cRc-X9-bt6"/>
+                            <constraint firstItem="4Se-Jf-Y82" firstAttribute="centerY" secondItem="BTf-rv-db3" secondAttribute="centerY" id="gPW-xf-0Ys"/>
+                            <constraint firstItem="4Se-Jf-Y82" firstAttribute="trailing" secondItem="BTf-rv-db3" secondAttribute="centerX" multiplier="1.7" id="lRF-nY-HEM"/>
                             <constraint firstItem="mvr-zU-1cM" firstAttribute="leading" secondItem="BTf-rv-db3" secondAttribute="centerX" multiplier="0.3" id="olv-IT-G7A"/>
                             <constraint firstItem="mvr-zU-1cM" firstAttribute="trailing" secondItem="BTf-rv-db3" secondAttribute="centerX" multiplier="1.7" id="wbN-mS-Bis"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="viewContainer" destination="mvr-zU-1cM" id="4NS-CC-lHm"/>
+                        <outlet property="viewLogo" destination="4Se-Jf-Y82" id="rgx-UQ-oVw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cty-Yy-ZgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -86,7 +96,6 @@
         <!--Servers-->
         <scene sceneID="Vsb-A2-C9O">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A3q-TW-pAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tableViewController id="JVz-Zx-nhV" customClass="ListTableViewController" customModule="ServerRemoteControl" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="6Ww-Ln-N2l">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
@@ -114,7 +123,7 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Icon - Server" id="Qfn-C5-iIu">
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" image="Icon - Server Running" id="Qfn-C5-iIu">
                                             <rect key="frame" x="15" y="1" width="40" height="40"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
@@ -132,6 +141,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Servers" id="yEU-Tp-oXr"/>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A3q-TW-pAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1264" y="367"/>
         </scene>
@@ -280,6 +290,7 @@
     <resources>
         <image name="Button - Restart" width="300" height="300"/>
         <image name="Button - Restart Hover" width="300" height="300"/>
-        <image name="Icon - Server" width="40" height="40"/>
+        <image name="Icon - Server Running" width="40" height="40"/>
+        <image name="Launch - Logo" width="300" height="30"/>
     </resources>
 </document>
