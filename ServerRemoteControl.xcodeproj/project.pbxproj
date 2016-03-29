@@ -19,6 +19,8 @@
 		A8573DA31CA5A59500143EE4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8573DA21CA5A59500143EE4 /* LoginViewController.swift */; };
 		A8573DA51CA5ACAA00143EE4 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8573DA41CA5ACAA00143EE4 /* ListTableViewController.swift */; };
 		A8573DA71CA5BD5900143EE4 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8573DA61CA5BD5900143EE4 /* NavigationController.swift */; };
+		A8CFFACE1CAAD8C600B43677 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFACD1CAAD8C600B43677 /* UIViewExtensions.swift */; };
+		A8CFFAD01CAAF2DF00B43677 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFACF1CAAF2DF00B43677 /* TabBarController.swift */; };
 		B8993B1DDA967FC98B5EB320 /* Pods_ServerRemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B75233AD2921F735EBA146 /* Pods_ServerRemoteControl.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		A8573DA21CA5A59500143EE4 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A8573DA41CA5ACAA00143EE4 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		A8573DA61CA5BD5900143EE4 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		A8CFFACD1CAAD8C600B43677 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		A8CFFACF1CAAF2DF00B43677 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 		A81E70721C9C845300CF72E5 /* ServerRemoteControl */ = {
 			isa = PBXGroup;
 			children = (
+				A8CFFAD31CAB132300B43677 /* Model */,
+				A8CFFACC1CAAD8AF00B43677 /* Helper */,
 				A81E70A51C9C84B400CF72E5 /* Controller */,
 				A81E70731C9C845300CF72E5 /* AppDelegate.swift */,
 				A81E70771C9C845300CF72E5 /* Main.storyboard */,
@@ -160,8 +166,24 @@
 				A8573DA21CA5A59500143EE4 /* LoginViewController.swift */,
 				A8573DA41CA5ACAA00143EE4 /* ListTableViewController.swift */,
 				A8573DA61CA5BD5900143EE4 /* NavigationController.swift */,
+				A8CFFACF1CAAF2DF00B43677 /* TabBarController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		A8CFFACC1CAAD8AF00B43677 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A8CFFACD1CAAD8C600B43677 /* UIViewExtensions.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		A8CFFAD31CAB132300B43677 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		DC75B678D985907759F2EAE9 /* Frameworks */ = {
@@ -357,6 +379,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A81E707C1C9C845300CF72E5 /* ServerRemoteControl.xcdatamodeld in Sources */,
+				A8CFFAD01CAAF2DF00B43677 /* TabBarController.swift in Sources */,
+				A8CFFACE1CAAD8C600B43677 /* UIViewExtensions.swift in Sources */,
 				A8573DA71CA5BD5900143EE4 /* NavigationController.swift in Sources */,
 				A8573DA31CA5A59500143EE4 /* LoginViewController.swift in Sources */,
 				A81E70761C9C845300CF72E5 /* DetailsViewController.swift in Sources */,

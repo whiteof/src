@@ -40,7 +40,7 @@ class LoginViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        segue.destinationViewController as! UINavigationController
+        segue.destinationViewController as! UITabBarController
     }
     
 }
