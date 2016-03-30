@@ -1,22 +1,23 @@
 //
-//  ViewController.swift
+//  AppViewController.swift
 //  ServerRemoteControl
 //
-//  Created by Victor Yurkin on 3/18/16.
+//  Created by Victor Yurkin on 3/30/16.
 //  Copyright © 2016 WCMC. All rights reserved.
 //
+
 
 import UIKit
 import Foundation
 import NMSSH
 
-class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class AppViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
     var sftp:NMSFTP!
     var timer: dispatch_source_t!
     var serverIP: String!
     var buttonAnimation = false
-
+    
     var newWordField: UITextField?
     var textView2: UITextField?
     
@@ -25,6 +26,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var labelStatus: UILabel!
     @IBOutlet weak var labelResponse: UILabel!
     @IBOutlet weak var buttonRestart: UIButton!
+
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -43,7 +45,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
         //self.startTimer()
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -52,7 +54,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewWillDisappear(animated: Bool) {
         //self.stopTimer()
     }
-
+    
     
     func wordEntered(alert: UIAlertAction!){
         self.buttonRestart.setImage(UIImage(named: "Button - Restart Hover"), forState: .Normal)
@@ -70,7 +72,7 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
             //self.buttonRestart.alpha = 1.0
             self.buttonAnimation = false
         })
-
+        
         // store the new word
         //self.textView2!.text = self.newWordField!.text
     }
@@ -89,15 +91,15 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
             
             //self.viewTest.rotate360Degrees()
             /*
-            let refreshAlert = UIAlertController(title: "Log Out", message: "Are You Sure to Log Out ? ", preferredStyle: UIAlertControllerStyle.Alert)
-            refreshAlert.addAction(UIAlertAction(title: "Confirm", style: .Default, handler: { (action: UIAlertAction!) in
-                self.navigationController?.popToRootViewControllerAnimated(true)
-            }))
-            refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
-                refreshAlert .dismissViewControllerAnimated(true, completion: nil)
-            }))
-            presentViewController(refreshAlert, animated: true, completion: nil)
-            */
+             let refreshAlert = UIAlertController(title: "Log Out", message: "Are You Sure to Log Out ? ", preferredStyle: UIAlertControllerStyle.Alert)
+             refreshAlert.addAction(UIAlertAction(title: "Confirm", style: .Default, handler: { (action: UIAlertAction!) in
+             self.navigationController?.popToRootViewControllerAnimated(true)
+             }))
+             refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .Default, handler: { (action: UIAlertAction!) in
+             refreshAlert .dismissViewControllerAnimated(true, completion: nil)
+             }))
+             presentViewController(refreshAlert, animated: true, completion: nil)
+             */
             // display an alert
             let newWordPrompt = UIAlertController(title: "Restart Server?", message: "Enter your CWID to confirm:", preferredStyle: UIAlertControllerStyle.Alert)
             newWordPrompt.addTextFieldWithConfigurationHandler(addTextField)
@@ -148,17 +150,17 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
             let responseTxt = NSString(data: response, encoding: NSUTF8StringEncoding) as! String
             self.labelResponse.text = responseTxt
             print(responseTxt)
- /*
-            do {
-                try self.sftp.session.channel.execute("/sbin/service httpd status > /var/www/html/server_control_api/test123.txt")
-                let responseTxt = self.sftp.contentsAtPath("/var/www/html/server_control_api/test123.txt")
-                let responseTxtStr = NSString(data: responseTxt, encoding: NSUTF8StringEncoding) as! String
-                self.labelResponse.text = responseTxtStr
-                print(responseTxtStr)
-            } catch {
-                print("An error occurred.")
-            }
-*/
+            /*
+             do {
+             try self.sftp.session.channel.execute("/sbin/service httpd status > /var/www/html/server_control_api/test123.txt")
+             let responseTxt = self.sftp.contentsAtPath("/var/www/html/server_control_api/test123.txt")
+             let responseTxtStr = NSString(data: responseTxt, encoding: NSUTF8StringEncoding) as! String
+             self.labelResponse.text = responseTxtStr
+             print(responseTxtStr)
+             } catch {
+             print("An error occurred.")
+             }
+             */
         })
     }
     
@@ -169,14 +171,14 @@ class DetailsViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("groupcell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("appcell", forIndexPath: indexPath)
         if(indexPath.row == 0) {
-            cell.textLabel?.text = "Restarted: 03/22/2016 3:05am"
+            cell.textLabel?.text = "Unit testing: 03/23/2016 5:05am"
             cell.detailTextLabel?.text = "by Victor Yurkin"
         }
         if(indexPath.row == 1) {

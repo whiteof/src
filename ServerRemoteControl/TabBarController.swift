@@ -26,6 +26,12 @@ class TabBarController: UITabBarController {
         self.tabBar.layer.masksToBounds = true
         self.tabBar.clipsToBounds = true
         
+        // Change color of tab bar icons
+        self.tabBar.tintColor = color
+        UITabBarItem.appearance().setTitleTextAttributes([NSForegroundColorAttributeName: color], forState:.Normal)
+        
+        
+        
     }
     
     override func viewDidAppear(animated: Bool) {

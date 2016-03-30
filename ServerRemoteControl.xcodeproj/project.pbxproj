@@ -21,6 +21,8 @@
 		A8573DA71CA5BD5900143EE4 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8573DA61CA5BD5900143EE4 /* NavigationController.swift */; };
 		A8CFFACE1CAAD8C600B43677 /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFACD1CAAD8C600B43677 /* UIViewExtensions.swift */; };
 		A8CFFAD01CAAF2DF00B43677 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFACF1CAAF2DF00B43677 /* TabBarController.swift */; };
+		A8CFFAD51CAC365200B43677 /* AppsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFAD41CAC365200B43677 /* AppsTableViewController.swift */; };
+		A8CFFAD71CAC39EA00B43677 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFFAD61CAC39EA00B43677 /* AppViewController.swift */; };
 		B8993B1DDA967FC98B5EB320 /* Pods_ServerRemoteControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02B75233AD2921F735EBA146 /* Pods_ServerRemoteControl.framework */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		A8573DA61CA5BD5900143EE4 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		A8CFFACD1CAAD8C600B43677 /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		A8CFFACF1CAAF2DF00B43677 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A8CFFAD41CAC365200B43677 /* AppsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppsTableViewController.swift; sourceTree = "<group>"; };
+		A8CFFAD61CAC39EA00B43677 /* AppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +171,8 @@
 				A8573DA41CA5ACAA00143EE4 /* ListTableViewController.swift */,
 				A8573DA61CA5BD5900143EE4 /* NavigationController.swift */,
 				A8CFFACF1CAAF2DF00B43677 /* TabBarController.swift */,
+				A8CFFAD41CAC365200B43677 /* AppsTableViewController.swift */,
+				A8CFFAD61CAC39EA00B43677 /* AppViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -378,7 +384,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8CFFAD71CAC39EA00B43677 /* AppViewController.swift in Sources */,
 				A81E707C1C9C845300CF72E5 /* ServerRemoteControl.xcdatamodeld in Sources */,
+				A8CFFAD51CAC365200B43677 /* AppsTableViewController.swift in Sources */,
 				A8CFFAD01CAAF2DF00B43677 /* TabBarController.swift in Sources */,
 				A8CFFACE1CAAD8C600B43677 /* UIViewExtensions.swift in Sources */,
 				A8573DA71CA5BD5900143EE4 /* NavigationController.swift in Sources */,
