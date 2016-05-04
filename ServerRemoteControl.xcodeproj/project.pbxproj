@@ -271,7 +271,7 @@
 				TargetAttributes = {
 					A81E706F1C9C845200CF72E5 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = XBKZT86CV4;
+						DevelopmentTeam = N7T323633C;
 					};
 					A81E70861C9C845300CF72E5 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -541,7 +541,7 @@
 				INFOPLIST_FILE = ServerRemoteControl/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.weill.src;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.weill.appmonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -557,7 +557,7 @@
 				INFOPLIST_FILE = ServerRemoteControl/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.weill.src;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.cornell.weill.appmonitor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
